@@ -1,0 +1,15 @@
+/* div{
+    color:red;
+}
+#username{
+    font-size: 30px;
+    color: green;
+}
+.para{
+    border: 8px solid yellow;
+} */
+.abc, .xyz{
+    padding-bottom: 16px;
+    border: 1px solid; 
+    margin-bottom: 16px;
+}
