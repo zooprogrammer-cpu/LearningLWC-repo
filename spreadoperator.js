@@ -56,12 +56,47 @@ console.log(obj3)
 
 //7. Shallow Copy
 var arr10 = ["x","y","z"]
-arr10.push(20)
-console.log(arr10)
-var arr11 = arr10
+// arr10.push(20)
+// console.log(arr10)
+// var arr11 = arr10
+// arr11.push("nikhil")
+// console.log(arr10)
+// console.log(arr11)  // the problem here is when arr10 got copied into arr11, the value of arr10 also got updated with value of arr11. so never use push operator. 
+
+//Here is how to do shallow copy an array correctly: 
+var arr11 = [...arr10]
 arr11.push("nikhil")
 console.log(arr10)
-console.log(arr11)  // the problem here is when arr10 got copied into arr11, the value of arr10 also got updated with value of arr11
+console.log(arr11)
+
+//8. Nested copy
+var arrObj =[
+    {name:"nikhil"},
+    {name:"salesforce"}
+
+]
+
+// var arrObj1=[...arrObj]
+// console.log(arrObj1)
+// arrObj1[0].name ="superman"
+// console.log(arrObj)
+// console.log(arrObj1) // shallow copy did not work in nested object since it replaced "nikhil" with "Salesforce" in arrObj also
+
+//Hack for nested copy
+var arrObj1 = JSON.parse(JSON.stringify(arrObj)) // JSON.stringify converts into string and JSON.parse  converts into object. 
+arrObj1[0].name="superman"
+console.log(arrObj1)
+console.log(arrObj)// you can see that the original arrObj still has nikhil and the new arrObj1 has superman
+
+
+
+
+
+
+
+
+
+
 
 
 
