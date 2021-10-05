@@ -26,6 +26,19 @@ export {PI_data as PI, add}
 
 //export with default
 
-// export default function minus minus(a,b){
-//     console.log(a-b)
+// export default function minus(a,b){
+// console.log(a-b)
 // }
+
+
+//removing default here
+export function minus(a,b){
+console.log(a-b)
+}
+
+// export function add(a,b){
+//     console.log(a+b)
+//     }
+
+
+
