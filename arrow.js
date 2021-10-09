@@ -27,5 +27,10 @@ const sum2 = (data1,data2)=>{
 }
 console.log(sum2(4,5))
 
+//sum example compact
+const sum3 =(data1,data2)=>data1+data2+20
+console.log(sum3(4,5))
+
+
 
 
