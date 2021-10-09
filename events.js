@@ -15,6 +15,11 @@ function handler(){
     document.querySelector(".demo").innerHTML = Math.random()
 }
 
+//remove handler to stop the random number generation
+function removeHandler(){
+    document.removeEventListener("mousemove",handler)
+}
+
 
 
 
