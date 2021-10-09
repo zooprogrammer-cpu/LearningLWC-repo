@@ -12,8 +12,19 @@
         <div class="demo"></div> -->
 
         <!-- remove mouse eventlistener on clikcing the button -->
-        <button onclick="removeHandler()">Click</button>
-        <div class="demo"></div>
+        <!-- <button onclick="removeHandler()">Click</button>
+        <div class="demo"></div> -->
+
+
+        <!-- event bubbling -->
+        <form onclick="alert('i am form')">
+            I am form
+            <div onclick="alert('i am div')"> I am div 
+                <p onclick="alert('i am p')"> I am p</p>
+            </div>
+        </form>
+
+
         
         <script src="./events.js"></script>
     </body>
